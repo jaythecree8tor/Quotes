@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {font-family: "QuirkiScandi"; src: url("./assets/fonts/QuirkiScandi.otf");
+  src: url("./assets/fonts/QuirkiScandi.otf") format("opentype"), 
+    url("./assets/fonts/QuirkiScandi.ttf") format("truetype"),
   }
+
+
+#root, html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.094), rgba(0, 0, 0, 0.148) ), url('./assets/background.jpg') ;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background: linear-gradient(11deg, #0e1225a0, #0a232098);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+border: 1px solid rgba(255, 255, 255, 0.473);
+  -webkit-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+  border-radius: 25px;
+  box-shadow: -1px 42px 71px 0px rgba(0,0,0,0.19);
 }
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}
+.text_b{
+  background: linear-gradient(11deg, #0e1225a0, #0a232098);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+border-radius: 25px;
+padding: 10px;
+}
+.card h1{
+  font-family: 'QuirkiScandi';
+  background: linear-gradient(to right, #f4ffef 0%, #e0ffc0 100%);
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent
+}
+.card h2{
+  font-family: 'QuirkiScandi';}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @media only screen and (max-width: 600px) {
+  .card {
+      width: 80%;
+      height: 30%;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
