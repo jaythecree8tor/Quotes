@@ -1,7 +1,7 @@
 
 ## QUOTES
 
-This ia a QUOTE generator i built using react and tailwind, i fetched the generated qoutes from an api using AXIOS
+This is a QUOTE generator i built using react.js and tailwind css, i fetched the generated qoutes from an api using AXIOS
 
 
 ![Logo](https://www.linkpicture.com/q/logo_89.png)
