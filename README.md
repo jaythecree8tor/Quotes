@@ -1,3 +1,18 @@
+
+## QUOTES
+
+This ia a QUOTE generator i built using react and tailwind, i fetched the generated qoutes from an api using AXIOS
+
+
+![Logo](https://www.linkpicture.com/q/logo_89.png)
+
+
+## Screenshots
+ 
+ ![plot](https://www.linkpicture.com/q/q-screen.jpg)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
